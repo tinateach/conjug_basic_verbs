@@ -347,3 +347,27 @@ if st.button("Next"):
     st.session_state.result = None
     st.session_state.is_correct = None
     st.rerun()  # ✅ Safe here
+
+
+# Show conjugation table
+if st.button("📘 Show Infinitive and All Conjugations"):
+    verb = st.session_state.selected_verb
+    st.markdown(f"## 🔎 Verb: **{verb}**")
+
+    # Show English equivalent
+    sample_key = list(VERBS[verb]["+"].keys())[0]
+    sample_english = VERBS[verb]["+"][sample_key][0]
+    st.markdown(f"**Meaning (example):** {sample_english}")
+
+    # Display full conjugation in table
+    with st.expander("📋 Full Conjugation Table", expanded=True):
+        for form_label, form_data in VERBS[verb].items():
+            form_name = {
+                "+": "Affirmative",
+                "-": "Negative",
+                "?": "Interrogative",
+                "?-": "Interrogative Negative"
+            }[form_label]
+            st.markdown(f"### 🔤 {form_name}")
+            for person, (eng, lt) in form_data.items():
+                st.markdown(f"- **{person}**: {eng} → *{lt}*")
