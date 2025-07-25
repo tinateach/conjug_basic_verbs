@@ -346,4 +346,4 @@ if st.button("Next"):
     st.session_state.user_input = ""
     st.session_state.result = None
     st.session_state.is_correct = None
-    st.experimental_rerun()
+    st.experimental_rerun()  # ✅ Safe here
