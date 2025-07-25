@@ -15,7 +15,7 @@ def normalize(text):
 
 # Verb data structure
 VERBS = {
-    "būti": {
+    "būti - to be": {
         "+": {
             "aš": ("I am at home", "Aš esu namie"),
             "tu": ("You (singular) are at home", "Tu esi namie"),
@@ -49,7 +49,7 @@ VERBS = {
             "jie/jos": ("Aren’t they at home?", "Ar jie / jos nėra namie?"),
         },
     },
-    "turėti": {
+    "turėti - to have": {
         "+": {
             "aš": ("I have a book.", "Aš turiu knygą."),
             "tu": ("You (singular) have a book.", "Tu turi knygą."),
@@ -83,7 +83,7 @@ VERBS = {
             "jie/jos": ("Don’t they have books?", "Ar jie / jos neturi knygų?"),
         },
     },
-    "eiti": {
+    "eiti - to go": {
         "+": {
             "aš": ("I go to school.", "Aš einu į mokyklą."),
             "tu": ("You (singular) go to school.", "Tu eini į mokyklą."),
@@ -123,7 +123,7 @@ VERBS = {
             "jie/jos": ("Don’t they go to school?", "Ar jie / jos neina į mokyklą?"),
         },
     },
-    "mėgti": {
+    "mėgti - to like": {
         "+": {
             "aš": ("I like tea.", "Aš mėgstu arbatą."),
             "tu": ("You (singular) like tea.", "Tu mėgsti arbatą."),
@@ -160,7 +160,7 @@ VERBS = {
             "jie/jos": ("Don’t they like tea?", "Ar jie / jos nemėgsta arbatos?"),
         },
     },
-    "norėti": {
+    "norėti - to want": {
         "+": {
             "aš": ("I want coffee.", "Aš noriu kavos."),
             "tu": ("You (singular) want coffee.", "Tu nori kavos."),
@@ -194,7 +194,7 @@ VERBS = {
             "jie/jos": ("Don’t they want coffee?", "Ar jie / jos nenori kavos?"),
         },
     },
-    "mokytis": {
+    "mokytis - to learn": {
         "+": {
             "aš": ("I study Lithuanian.", "Aš mokausi lietuvių kalbos."),
             "tu": ("You (singular) study Lithuanian.", "Tu mokaisi lietuvių kalbos."),
